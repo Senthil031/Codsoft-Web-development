@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SENTHIL- Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color:white ;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 10px;
+            background-color: white;
+            margin: 50px ;
+            border-radius: 50px;
+        }
+
+#about {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+#about p {
+            font-size: 20px; /* Adjust the font size according to your preference */
+        }
+
+.about-content {
+    display: flex;
+    align-items: center;
+    font size-"18px";
+}
+      .social-icons {
+    display: flex;
+    justify-content: space-between; /* This will add space between the icons */
+    max-width: 300px; /* Adjust the maximum width according to your layout */
+    margin: 0 auto; /* Center the icons */
+  }
+
+  .social-icons a {
+    margin-right: 10px; /* Adjust the margin to add space between each icon */
+  }
+
+  /* Additional styling for individual icons (optional) */
+  .social-icons img {
+    border-radius: 50%; /* Make the images circular */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  }
+        }
+.html-logo,
+        .css-logo,
+        .javascript-logo,
+        .android-logo,
+        .kotlin-logo {
+            max-width: 40px; /* Adjust size for logos */
+        }
+ .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Align items horizontally */
+        }
+
+        .about-text {
+            max-width: 600px; /* Limit the width of the text */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+ .logo-container .icon {
+            margin-right: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .contact-button
+        {
+            display: inline-block;
+            padding: 20px 20px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: black;
+            background-color: blue;
+            border-radius: 9px;
+            font-weight: bold;
+        }
+
+       
+        .skills, .projects, .resume, .contact me {
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 50%;
+            height: 300px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color:white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+.type{
+  width: 100%;
+            height: 500px;
+            border-radius: 50px;
+            margin-bottom: 50px;
+padding: 100px;
+}
+
+.what-i-do-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.what-i-do-item {
+    flex: 1;
+    order: 1;
+}
+
+.type {
+    width: 40%; /* Adjust the width of the image */
+    border-radius: 10px; /* Add border-radius if desired */
+    order: 2;
+}
+
+
+        .what-i-do-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+.star-rating {
+    display: inline-block;
+    font-size: 20px;
+    color: gold;
+}
+
+.star-rating::before {
+    content: '★';
+}
+
+.star-rating[data-rating="1"]::before {
+    content: '★☆☆☆☆';
+}
+
+.star-rating[data-rating="2"]::before {
+    content: '★★☆☆☆';
+}
+
+.star-rating[data-rating="3"]::before {
+    content: '★★★☆☆';
+}
+
+.star-rating[data-rating="4"]::before {
+    content: '★★★★☆';
+}
+
+.star-rating[data-rating="5"]::before {
+    content: '★★★★★';
+}
+
+
+.skill-item {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.image {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.web {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+@media (max-width: 768px) {
+    .description {
+        padding: 20px 0; /* Adjust padding for smaller screens */
+    }
+}
+
+
+    .description {
+        width: 40%; /* Adjust the width as needed */
+    }
+
+    .image {
+        width: 80%; /* Adjust the width as needed */
+    }
+
+    .web {
+         width: 100%; /* Adjust the width as needed */
+    max-width: 700px; /* Set a maximum width to control the size */
+    height: auto;
+    border-radius: 50px;
+    }
+ .project-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .project {
+        flex: 1;
+        border: 1px solid #ddd; /* Add border for separation */
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 10px;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd; /* Add border for separation */
+    }
+
+    .project-details {
+        padding: 10px;
+    }
+ .resume-button {
+        background-color:blue;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Certificates</a>
+        <a href="#certificates">Projects</a>
+        <a href="#resume">My Resume</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+  <section id="about">
+        <h2>👋 Hi all, I'm Senthil Kumar S K</h2>
+        <div class="about-content">
+
+      
+     <img src="https://imgur.com/szvZ81R.jpg" alt="Your Name" width="400" height="200">
+
+        <p>
+                        I am a passionate web developer and coder, dedicated to crafting dynamic and user-friendly digital experiences. With a keen eye for design and a love for clean, efficient code, I thrive on turning ideas into functional, aesthetically pleasing websites. I embrace challenges, constantly seeking new technologies to enhance my skill set. In the world of ones and zeros, I find my canvas, and with each line of code, I aim to make a positive impact in the ever-evolving realm of web development. </p></div>
+ <div class="social-icons">
+            <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+                <img src="https://imgur.com/c4nxNjW.png" alt="GitHub" width="40" height="40">
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+                <img src="https://imgur.com/Wd0WeBG.png" alt="LinkedIn" width="40" height="40">
+            </a>
+            <a href="mailto:your.email@gmail.com" title="Gmail">
+                <img src="https://imgur.com/fXpIYdw.png" alt="Gmail" width="40" height="40">
+            </a>
+            <a href="https://www.facebook.com/yourusername" target="_blank" title="Facebook">
+                <img src="https://imgur.com/1jtgeli.png" alt="Facebook" width="40" height="40">
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+                <img src="https://imgur.com/Ww5OqIT.png" alt="Twitter" width="40" height="40">
+            </a>
+        </div>
+ <div class="buttons">
+            <a href="#contact" class="contact-button">Contact Me</a>
+            <a href="https://imgur.com/oA0BcQE.png" target="_blank" class="resume-button">Check My Resume</a>
+        </div>
+        </div>
+</section>   
+
+<section id="what-i-do">
+    <h2>What I Do</h2>
+    <div class="what-i-do-content">
+        <div class="what-i-do-item">
+            <ul>
+                <li>I specialize in crafting visually appealing and user-friendly web designs, employing technologies such as HTML, CSS, and JavaScript to create seamless online experiences.</li>
+                <li>My expertise extends to coding, where I transform creative ideas into functional and efficient digital solutions, ensuring a smooth user journey across various platforms.</li>
+                <li>In the realm of app development, I excel in creating mobile applications using technologies such as Java and Kotlin, delivering engaging and efficient solutions for Android platforms.</li>
+            </ul>
+        </div>
+        <img src="https://imgur.com/UOgAtJC.jpg" alt="Computer" class="type">
+    </div>
+</section>
+
+
+<div class="image">
+        <h2>Skills</h2>
+        <img src="https://imgur.com/hn6CuD5.jpg" alt="Web Logo" class="web">
+    </div>
+
+   <section id="skills" class="skills">
+    <div class="skill-item">
+        <h3>Coding</h3>
+        <ul>
+            <li>
+
+My coding skills encompass a diverse range of technologies and languages, allowing me to craft efficient and user-friendly digital solutions.</li>
+            <li> From web development using HTML, CSS, and JavaScript to mobile app development with Java and Kotlin, I excel in transforming creative concepts into functional and aesthetically pleasing applications. </li>
+            <li>With a keen eye for detail and a passion for problem-solving, I continuously strive to stay abreast of industry trends, ensuring that the solutions I create are innovative and aligned with the evolving landscape of technology.</li>
+        </ul>
+    </div>
+
+  
+    <div class="skill-item">
+        <h3>Web development</h3>
+        <ul>
+            <li>In the realm of web development, I specialize in creating visually appealing and seamlessly functional websites.</li>
+            <li>Proficient in HTML for structuring content, CSS for styling, and JavaScript for interactive features, I ensure an optimal user experience across various platforms. </li>
+            <li> With a focus on responsive design and a commitment to staying updated with the latest web technologies, I bring creative ideas to life, turning them into dynamic and user-centric online experiences.
+
+
+
+
+
+</li>
+        </ul>
+    </div>
+
+    <div class="skill-item">
+        <h3>Python</h3>
+        <ul>
+            <li>My proficiency in Python extends to versatile applications, ranging from data analysis to backend development.</li>
+            <li>Leveraging Python's readability and flexibility, I excel in creating efficient and scalable solutions. Whether it's scripting, automation, or building robust web applications using frameworks like Django, my Python skills enable me to tackle diverse challenges with a focus on code clarity and functionality.</li>
+           
+        </ul>
+    </div>
+</section>
+
+
+  <!-- Proficiency Section -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proficiency Section with Star Ratings</title>
+    <style>
+        /* Container for proficiency section */
+        #proficiency {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Proficiency item styles */
+        .proficiency-item {
+            text-align: center;
+        }
+
+        /* Star rating styles */
+        .star-rating {
+            font-size: 24px;
+            color: gold;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="proficiency">
+        <!-- Proficiency: HTML -->
+        <div class="proficiency-item">
+            <div class="proficiency-details">
+                <p>HTML</p>
+                <!-- Add star rating (adjust the number of stars based on proficiency) -->
+                <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+            <img src="https://imgur.com/vET2Gr2.png" alt="HTML Proficiency" class="proficiency-icon">
+        </div>
+
+        <!-- Proficiency: CSS -->
+        <div class="proficiency-item">
+            <div class="proficiency-details">
+                <p>CSS</p>
+                <!-- Add star rating (adjust the number of stars based on proficiency) -->
+                <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+            <img src="https://imgur.com/47GRA3x.png" alt="CSS Proficiency" class="proficiency-icon">
+        </div>
+
+        <!-- Proficiency: JavaScript -->
+        <div class="proficiency-item">
+            <div class="proficiency-details">
+                <p>JavaScript</p>
+                <!-- Add star rating (adjust the number of stars based on proficiency) -->
+                <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+            <img src="https://imgur.com/1dTlMq2.png" alt="JavaScript Proficiency" class="proficiency-icon">
+        </div>
+    </section>
+
+</body>
+</html>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-row">
+        <!-- Project 1 -->
+        <div class="project">
+           
+            <div class="project-details">
+                <h3>E-commerce Platform</h3>
+              
+<ul>
+
+<li>Developed a comprehensive e-commerce platform with features such as product listings, user accounts, shopping cart functionality, and secure checkout.</li></p>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            
+            <div class="project-details">
+                <h3>Task Management App
+</h3>
+                <p><ul>
+<li>Created a task management application to help users organize and prioritize their tasks. Implemented features like task creation, categorization, due dates, and status tracking.</li></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-row">
+        <!-- Project 3 -->
+        <div class="project">
+            <div class="project-details">
+                <h3>Blog Website</h3>
+                <p><ul><li> Designed and developed a blog website with user authentication, allowing users to create, edit, and delete their blog posts. Implemented a responsive design for optimal viewing on various devices.</li>
+</p>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project">
+          
+            <div class="project-details">
+                <h3>Fitness Tracker</h3>
+                <p><ul><li> Developed a fitness tracking application to help users monitor their exercise routines. Included features for recording workouts, setting fitness goals, and tracking progress over time.</li>
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   
+
+    <section id="certificates" class="gallery">
+        <h2>Certificates</h2>
+        <img src="https://imgur.com/pDCcgQH.png" alt="Certificate 1">
+        <img src="https://imgur.com/q5jxhZb.jpg" alt="Certificate 2">
+        <img src="https://imgur.com/3zWTucT.png" alt="Certificate 3">
+        <img src="https://imgur.com/U5iLtR3.jpg" alt="Certificate 4">
+        <!-- Add more certificate images as needed -->
+    </section>
+
+   <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <p>Download my resume <a href="resume.png" target="_blank" download>here</a>.</p>
+    <button class="resume-button" onclick="window.open('resume.png', '_blank')">Check My Resume</button>
+</section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: senthil.1545@email.com</p>
+        <p>Phone:582169745</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Senthil. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
